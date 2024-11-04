@@ -1,0 +1,47 @@
+{
+  "name": "ap-sitemap",
+  "version": "0.0.0-semantically-released",
+  "description": "Effortlessly create and manage your sitemap.xml files with ap-sitemapr! This lightweight npm package simplifies the process of generating sitemaps for your website, ensuring search engines can easily discover and index your content.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "jest",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amanp30/ap-sitemap.git"
+  },
+  "keywords": [
+    "build",
+    "sitemap",
+    "xml",
+    "files"
+  ],
+  "author": "Aman Pareek (https://amanpareek.in/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amanp30/ap-sitemap/issues"
+  },
+  "homepage": "https://github.com/Amanp30/ap-sitemap#readme",
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.14.0",
+    "commitizen": "4.3.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "9.14.0",
+    "globals": "15.11.0",
+    "jest": "29.7.0",
+    "semantic-release": "24.2.0"
+  }
+}
