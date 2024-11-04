@@ -51,5 +51,5 @@ sitemap.addPages([
 Once you've added all your pages, you can generate the sitemap(s) by calling the generate method:
 
 ```
-const sitemapUrl = generator.generate(); // https://example.com/sitemap.xml
+const sitemapUrl = sitemap.generate(); // https://example.com/sitemap.xml
 ```
