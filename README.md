@@ -1,6 +1,7 @@
 # ap-sitemap
 
-SiteMapGenerator is a Node.js module for generating sitemaps in XML format. It allows you to easily manage URLs and create sitemap files that comply with the sitemap protocol.
+SiteMapGenerator is a Node.js module for generating sitemaps in XML format. It allows you to easily manage URLs and
+create sitemap files that comply with the sitemap protocol.
 
 ## Installation
 
@@ -27,7 +28,8 @@ const sitemap = new SiteMapGenerator({
 
 ### Add Pages
 
-Use the addPages method to add pages to the sitemap. You need to pass an array of page objects, where each object contains url, updatedAt, changefreq, and priority.
+Use the addPages method to add pages to the sitemap. You need to pass an array of page objects, where each object
+contains url, updatedAt, changefreq, and priority.
 
 ```
 sitemap.addPages([
@@ -51,5 +53,9 @@ sitemap.addPages([
 Once you've added all your pages, you can generate the sitemap(s) by calling the generate method:
 
 ```
-const sitemapUrl = sitemap.generate(); // https://example.com/sitemap.xml
+const result = sitemap.generate();
+
+// The result will contain both the sitemap URL and a message
+console.log(result.sitemapLink); // Example output: 'https://example.com/sitemap.xml'
+console.log(result.message);    // Example output: 'sitemap.xml generated successfully.'
 ```
